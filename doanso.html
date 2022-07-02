@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+    <button onclick="check()">Play!</button>
+    <script>
+        const check = () => {
+            let max = +prompt("Nhập số lớn nhất được chọn");
+            let result = Math.floor(Math.random() * max);
+            console.log(result, "result")
+            for (let i = 0; i < 3; i++) {
+                let value = parseInt(prompt("Nhập số bạn mà bạn chọn: "));
+                console.log(value, "value")
+                if (result == value) {
+                    alert("Bạn là người chiến thắng");
+                    return;
+                }
+            } alert("Bạn đã thua cuộc");
+        }
+    </script>
+</body>
+
+</html>
